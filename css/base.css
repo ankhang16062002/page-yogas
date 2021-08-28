@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button span {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    animation: isWidth 1s linear infinite;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes isWidth {
+    0%{width: 0; height: 0; opacity: 0.5;}
+    100%{width: 500px;height: 500px; opacity: 0;}
+}
+
+
+
